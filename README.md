@@ -1,17 +1,19 @@
-# Netflix Data Analysis 📊
+# Netflix Data Analysis & Recommendation System 📊🎬
 
 ## 📌 Project Summary
 
-This project performs an exploratory data analysis (EDA) on Netflix content to uncover patterns in content type, genres, ratings, duration, and growth trends over time. The analysis focuses on understanding how Netflix content has evolved and what factors differentiate Movies and TV Shows.
+This project performs an exploratory data analysis (EDA) on Netflix content to uncover patterns in content type, genres, ratings, duration, and growth trends over time.
+Additionally, a **content-based recommendation system** is built to suggest similar titles based on textual and categorical features.
 
 ---
 
 ## 📌 Project Objective
 
-* Analyze Netflix dataset to identify trends in content distribution
+* Analyze Netflix dataset to identify content trends
 * Compare Movies vs TV Shows across multiple dimensions
 * Understand genre popularity, ratings, and duration patterns
-* Study time-based trends in content addition and production
+* Study time-based trends in content addition
+* Build a recommendation system to suggest similar content
 
 ---
 
@@ -21,57 +23,76 @@ This project performs an exploratory data analysis (EDA) on Netflix content to u
 * Pandas
 * Matplotlib
 * Seaborn
+* Scikit-learn (TF-IDF, Cosine Similarity)
 
 ---
 
 ## 📂 Project Structure
 
-* `notebooks/` → Complete EDA analysis
+* `notebooks/` → Complete EDA + Recommendation System
 * `requirements.txt` → Dependencies
 
 ---
 
 ## 🔍 Analysis Performed
 
-### 1. Explore Data
+### 1. Data Preparation
 
 * Handling Missing Values
 * Feature Engineering
 
 ---
 
-### 2. EDA
+### 2. Exploratory Data Analysis (EDA)
 
 #### 🔹 Univariate Analysis
 
-1. Which type of content is more prevalent on platforms: Movies & TV Shows?
-2. Top 10 directors by number of titles
-3. Top 10 cast (actors & actresses)
-4. Which countries produce the most content?
-5. How have releases (movies vs TV shows) evolved over time?
-6. What are the most common ratings for Movies and TV Shows?
-7. What are the most common genres on Netflix?
-8. What is the average duration of movies?
-9. How many seasons do TV Shows have on average?
-10. Are there patterns in descriptions of adult movie titles?
-11. How many titles were added each year?
-12. How many titles were added each month?
-13. How many titles were added each day?
+* Content distribution: Movies vs TV Shows
+* Top 10 directors
+* Top cast (actors & actresses)
+* Top content-producing countries
+* Release trends over time
+* Rating distribution
+* Genre distribution
+* Average movie duration
+* Average number of seasons in TV Shows
+* Word patterns in adult content descriptions
+* Titles added by year, month, and day
 
 ---
 
 #### 🔹 Bivariate Analysis
 
-1. How does the distribution of content ratings differ between Movies & TV Shows?
-2. Distribution of content released over the years
-3. Distribution of Movies/TV Shows across top 10 countries
-4. Distribution of Movies/TV Shows across top 10 directors
-5. How does yearly content addition differ between Movies and TV Shows?
-6. How does monthly content addition differ between Movies and TV Shows?
-7. How have top genres evolved over time?
-8. How does movie duration vary across genres?
-9. How do children's ratings vary across top countries?
-10. How has the average number of seasons changed over time?
+* Rating distribution across Movies & TV Shows
+* Content trends over years
+* Content distribution across top countries
+* Content distribution across top directors
+* Yearly & monthly trends of content addition
+* Genre trends over time
+* Movie duration across genres
+* Children's ratings distribution by country
+* TV show seasons trend over time
+
+---
+
+## 🤖 Recommendation System
+
+A **content-based recommendation system** is implemented using:
+
+* TF-IDF Vectorization
+* Cosine Similarity
+* Combined features:
+
+  * Description
+  * Genre
+  * Cast
+  * Director
+
+### 🔹 How it works
+
+* Converts text data into numerical vectors
+* Computes similarity between titles
+* Recommends top similar content based on input title
 
 ---
 
@@ -82,19 +103,20 @@ This project performs an exploratory data analysis (EDA) on Netflix content to u
 * Drama and Comedy dominate as the most common genres
 * Content production is concentrated in a few top countries
 * Movie durations vary significantly by genre
-* TV Shows typically maintain a stable number of seasons over time
-* Genre trends evolve with time, showing shifts in audience preference
+* TV Shows maintain relatively stable season counts over time
+* Genre trends evolve, reflecting changing audience preferences
 
 ---
 
 ## 📌 Future Improvements
 
-* Add interactive dashboards (Plotly / Power BI)
-* Perform advanced statistical analysis
-* Build recommendation system using content features
+* Build interactive dashboards (Power BI / Plotly)
+* Optimize recommendation system performance
+* Add hybrid recommendation techniques
+* Deploy as a web application
 
 ---
 
 ## 📌 Author
 
-Shravan_Vemula
+**Shravan Vemula**
