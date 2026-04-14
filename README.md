@@ -1,5 +1,5 @@
 # Netflix Data Analysis & Recommendation System 📊🎬
-
+![alt text](Netflix_banner.png)
 ## 📌 Project Summary
 
 This project performs an exploratory data analysis (EDA) on Netflix content to uncover patterns in content type, genres, ratings, duration, and growth trends over time.
@@ -31,6 +31,141 @@ Additionally, a **content-based recommendation system** is built to suggest simi
 
 * `notebooks/` → Complete EDA + Recommendation System
 * `requirements.txt` → Dependencies
+
+---
+
+## 📊 Dataset Column Dictionary
+
+| Column Name     | Description |
+|----------------|------------|
+| show_id        | Unique ID for each title |
+| type           | Movie or TV Show |
+| title          | Name of the content |
+| director       | Director of the content |
+| cast           | Actors/Actresses |
+| country        | Country of production |
+| date_added     | Date added to Netflix |
+| release_year   | Year of release |
+| rating         | Content rating (e.g., TV-MA, PG) |
+| duration       | Duration (minutes or seasons) |
+| listed_in      | Genre/category |
+| description    | Short summary of content |
+
+---
+
+## 📊 Dataset Preview
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>show_id</th>
+      <th>type</th>
+      <th>title</th>
+      <th>director</th>
+      <th>cast</th>
+      <th>country</th>
+      <th>date_added</th>
+      <th>release_year</th>
+      <th>rating</th>
+      <th>duration</th>
+      <th>listed_in</th>
+      <th>description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>s1</td>
+      <td>Movie</td>
+      <td>Dick Johnson Is Dead</td>
+      <td>Kirsten Johnson</td>
+      <td>NaN</td>
+      <td>United States</td>
+      <td>September 25, 2021</td>
+      <td>2020</td>
+      <td>PG-13</td>
+      <td>90 min</td>
+      <td>Documentaries</td>
+      <td>As her father nears the end of his life, filmm...</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>s2</td>
+      <td>TV Show</td>
+      <td>Blood &amp; Water</td>
+      <td>NaN</td>
+      <td>Ama Qamata, Khosi Ngema, Gail Mabalane, Thaban...</td>
+      <td>South Africa</td>
+      <td>September 24, 2021</td>
+      <td>2021</td>
+      <td>TV-MA</td>
+      <td>2 Seasons</td>
+      <td>International TV Shows, TV Dramas, TV Mysteries</td>
+      <td>After crossing paths at a party, a Cape Town t...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>s3</td>
+      <td>TV Show</td>
+      <td>Ganglands</td>
+      <td>Julien Leclercq</td>
+      <td>Sami Bouajila, Tracy Gotoas, Samuel Jouy, Nabi...</td>
+      <td>NaN</td>
+      <td>September 24, 2021</td>
+      <td>2021</td>
+      <td>TV-MA</td>
+      <td>1 Season</td>
+      <td>Crime TV Shows, International TV Shows, TV Act...</td>
+      <td>To protect his family from a powerful drug lor...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>s4</td>
+      <td>TV Show</td>
+      <td>Jailbirds New Orleans</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>September 24, 2021</td>
+      <td>2021</td>
+      <td>TV-MA</td>
+      <td>1 Season</td>
+      <td>Docuseries, Reality TV</td>
+      <td>Feuds, flirtations and toilet talk go down amo...</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>s5</td>
+      <td>TV Show</td>
+      <td>Kota Factory</td>
+      <td>NaN</td>
+      <td>Mayur More, Jitendra Kumar, Ranjan Raj, Alam K...</td>
+      <td>India</td>
+      <td>September 24, 2021</td>
+      <td>2021</td>
+      <td>TV-MA</td>
+      <td>2 Seasons</td>
+      <td>International TV Shows, Romantic TV Shows, TV ...</td>
+      <td>In a city of coaching centers known to train I...</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 ---
 
@@ -105,6 +240,16 @@ A **content-based recommendation system** is implemented using:
 * Movie durations vary significantly by genre
 * TV Shows maintain relatively stable season counts over time
 * Genre trends evolve, reflecting changing audience preferences
+
+---
+###  Content Released Over Time by Type
+---
+![alt text](image-1.png)
+
+---
+### Top Genre Trend Since 2000
+---
+![alt text](image-2.png)
 
 ---
 
