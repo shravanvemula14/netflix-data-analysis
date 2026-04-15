@@ -133,36 +133,6 @@ Additionally, a **content-based recommendation system** is built to suggest simi
       <td>Crime TV Shows, International TV Shows, TV Act...</td>
       <td>To protect his family from a powerful drug lor...</td>
     </tr>
-    <tr>
-      <th>3</th>
-      <td>s4</td>
-      <td>TV Show</td>
-      <td>Jailbirds New Orleans</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>September 24, 2021</td>
-      <td>2021</td>
-      <td>TV-MA</td>
-      <td>1 Season</td>
-      <td>Docuseries, Reality TV</td>
-      <td>Feuds, flirtations and toilet talk go down amo...</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>s5</td>
-      <td>TV Show</td>
-      <td>Kota Factory</td>
-      <td>NaN</td>
-      <td>Mayur More, Jitendra Kumar, Ranjan Raj, Alam K...</td>
-      <td>India</td>
-      <td>September 24, 2021</td>
-      <td>2021</td>
-      <td>TV-MA</td>
-      <td>2 Seasons</td>
-      <td>International TV Shows, Romantic TV Shows, TV ...</td>
-      <td>In a city of coaching centers known to train I...</td>
-    </tr>
   </tbody>
 </table>
 </div>
@@ -228,6 +198,8 @@ A **content-based recommendation system** is implemented using:
 * Converts text data into numerical vectors
 * Computes similarity between titles
 * Recommends top similar content based on input title
+
+![alt text](image-3.png)
 
 ---
 

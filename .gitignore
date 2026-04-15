@@ -3,4 +3,4 @@ __pycache__/
 *.pyc
 .env
 anaconda3/
-data/raw/*
+!data/*
